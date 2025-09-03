@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rooms</title>
+    <link rel="stylesheet" href="room.css" />
+  </head>
+  <body>
+    <h1> 👾 Choose Your Room! 👾 </h1>
+    <p>Click a room to continue.</p>
+
+    <!-- Room buttons to go to each room html -->
+    <button id="bedroomButton">BEDROOM</button>
+    <button id="livingRoomButton">LIVING ROOM</button>
+    <button id="bathroomButton">BATHROOM</button>
+    <button id="kitchenButton">KITCHEN</button>
+
+    <!-- Bedroom Script -->
+    <script>
+      const bedroomButton = document.getElementById('bedroomButton');
+      // Event listener for button
+      // When <clicked> -> redirects user to -> [specificRoom].html
+        bedroomButton.addEventListener('click', () => {
+        window.location.href = 'bedroom.html';
+      });
+    </script>
+
+    <!-- Living Room Script -->
+    <script>
+        const livingRoomButton = document.getElementById('livingRoomButton');
+        // Event listener for button
+        // When <clicked> -> redirects user to -> [specificRoom].html
+          livingRoomButton.addEventListener('click', () => {
+          window.location.href = 'livingRoom.html';
+        });
+    </script>
+
+    <!-- Bathroom Script -->
+    <script>
+        const bathroomButton = document.getElementById('bathroomButton');
+        // Event listener for button
+        // When <clicked> -> redirects user to -> [specificRoom].html
+          bathroomButton.addEventListener('click', () => {
+          window.location.href = 'bathroom.html';
+        });
+    </script>
+
+    <!-- Kitchen Script -->
+    <script>
+        const kitchenButton = document.getElementById('kitchenButton');
+        // Event listener for button
+        // When <clicked> -> redirects user to -> [specificRoom].html
+          kitchenButton.addEventListener('click', () => {
+          window.location.href = 'kitchen.html';
+        });
+    </script>
+      
+  </body>
+</html>
