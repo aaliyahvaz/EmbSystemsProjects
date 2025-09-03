@@ -2,11 +2,23 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Embedded Systems Project</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to our web application.</p>
+    <h1> 👾 Welcome to Embed-It! 👾 </h1>
+    <p>Click start to continue.</p>
+
+    // Start button to go to room.html 
+    <button id="startButton">START</button>
+    <script>
+      // Get button element
+      const startButton = document.getElementById('startButton');
+      // Event listener for button
+      // When <clicked> -> redirects user to -> room.html
+      startButton.addEventListener('click', () => {
+        window.location.href = 'rooms.html';
+      });
+    </script>
   </body>
 </html>
