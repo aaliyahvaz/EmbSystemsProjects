@@ -9,27 +9,40 @@
     <h1> Welcome to the Bathroom! </h1>
     <p>Select a nook to begin.</p>
 
+    <!-- Home Button --> 
+    <button id="homeButton">HOME</button>
+
     <!-- Buttons that will lead to nooks --> 
     <button id="showerNookButton">SHOWER NOOK</button>
     <button id="vanityNookButton">VANITY NOOK</button>
 
-    <!-- Shower Nook Script-->
+    <!-- Button Script-->
     <script>
-      const showerNookButton = document.getElementById('showerNook');
+      const homeButton = document.getElementById('homeButton');
       // Event listener for button
       // When clicked redirects user to specific HTML pages
-        showerNookButton.addEventListener('click', () => {
-        window.location.href = 'showerNook.html';
+      homeButton.addEventListener('click', () => {
+      window.location.href = '../room.html';
+      });
+    </script>
+
+    <!-- Shower Nook Script-->
+    <script>
+      const showerNookButton = document.getElementById('showerNookButton');
+      // Event listener for button
+      // When clicked redirects user to specific HTML pages
+      showerNookButton.addEventListener('click', () => {
+      window.location.href = 'showerNook.html';
       });
     </script>
 
      <!-- Vanity Nook Script-->
     <script>
-      const vanityNookButton = document.getElementById('vanityNook');
+      const vanityNookButton = document.getElementById('vanityNookButton');
       // Event listener for button
       // When clicked redirects user to specific HTML pages
-        vanityNook.addEventListener('click', () => {
-        window.location.href = 'vanityNook.html';
+      vanityNookButton.addEventListener('click', () => {
+      window.location.href = 'vanityNook.html';
       });
     </script>
  </body>

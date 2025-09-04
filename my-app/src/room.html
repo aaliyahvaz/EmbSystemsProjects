@@ -9,11 +9,24 @@
     <h1> 👾 Choose Your Room! 👾 </h1>
     <p>Click a room to continue.</p>
 
+    <!-- Back Button -->
+    <button id="backButton">BACK</button>
+
     <!-- Room buttons to go to each room html -->
     <button id="bedroomButton">BEDROOM</button>
     <button id="livingRoomButton">LIVING ROOM</button>
     <button id="bathroomButton">BATHROOM</button>
     <button id="kitchenButton">KITCHEN</button>
+
+    <!-- Back Button Script -->
+    <script>
+      const backButton = document.getElementById('backButton');
+      // Event listener for button
+      // When <clicked> -> redirects user to -> [specificRoom].html
+        backButton.addEventListener('click', () => {
+        window.location.href = 'index.html';
+      });
+    </script>
 
     <!-- Bedroom Script -->
     <script>
@@ -41,7 +54,7 @@
         // Event listener for button
         // When <clicked> -> redirects user to -> [specificRoom].html
           bathroomButton.addEventListener('click', () => {
-          window.location.href = 'bathroom.html';
+          window.location.href = 'bathroom/bathroom.html';
         });
     </script>
 
