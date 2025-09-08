@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Living Room</title>
+    <link rel="stylesheet" href="livingRoom.css" />
+  </head>
+  <body>
+    <h1> Welcome to the Living Room! </h1>
+    <p>Select a nook to begin.</p>
+
+    <!-- Home Button --> 
+    <button id="homeButton">HOME</button>
+
+    <!-- Buttons that will lead to nooks --> 
+    <button id="couchNookButton">COUCH NOOK</button>
+    <button id="lampNookButton">LAMP NOOK</button>
+
+    <!-- Home Button Script-->
+    <script>
+      const homeButton = document.getElementById('homeButton');
+      // Event listener for button
+      // When clicked redirects user to specific HTML pages
+      homeButton.addEventListener('click', () => {
+      window.location.href = '../room.html';
+      });
+    </script>
+
+    <!-- Couch Nook Script-->
+    <script>
+      const couchNookButton = document.getElementById('couchNookButton');
+      // Event listener for button
+      // When clicked redirects user to specific HTML pages
+      couchNookButton.addEventListener('click', () => {
+      window.location.href = 'couchNook.html';
+      });
+    </script>
+
+     <!-- Lamp Nook Script-->
+    <script>
+      const lampNookButton = document.getElementById('lampNookButton');
+      // Event listener for button
+      // When clicked redirects user to specific HTML pages
+      lampNookButton.addEventListener('click', () => {
+      window.location.href = 'lampNook.html';
+      });
+    </script>
+ </body>
+</html>
